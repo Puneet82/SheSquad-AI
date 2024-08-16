@@ -38,7 +38,7 @@ function App() {
         className="w-full md:w-2/3 lg:w-1/2 xl:w-1/3 text-center rounded-lg shadow-lg bg-white py-6 px-4 transition-all duration-500 transform hover:scale-105"
       >
         <a href="https://github.com/Vishesh-Pandey/chat-ai" target="_blank" rel="noopener noreferrer">
-          <h1 className="text-4xl font-bold text-blue-500 mb-4 animate-bounce">SheSquadAI</h1>
+          <h1 className="text-4xl font-bold text-blue-500 mb-4 animate-bounce">SheSquad-AI</h1>
         </a>
         <textarea
           required
