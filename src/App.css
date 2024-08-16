@@ -1,0 +1,129 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  
+  h1 {
+    color: #388697;
+  }
+  
+  /* Container and Forms */
+  .bg-gradient-to-r {
+    background: linear-gradient(90deg, rgba(225, 245, 254, 1) 0%, rgba(191, 240, 255, 1) 100%);
+  }
+  
+  form {
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  textarea {
+    resize: none;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  textarea:focus {
+    outline: none;
+    border-color: #388697;
+    box-shadow: 0 0 8px rgba(56, 134, 151, 0.2);
+  }
+  
+  button {
+    background-color: #388697;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2a6776;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  button:disabled {
+    background-color: #a5b9bd;
+    cursor: not-allowed;
+  }
+  
+  button:disabled:hover {
+    background-color: #a5b9bd;
+  }
+  
+  /* Answer Box Styling */
+  div.answer-box {
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-height: 500px;
+    overflow-y: auto;
+    text-align: left;
+    margin-top: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  div.answer-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Markdown Content Styling */
+  .markdown-content {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: left;
+    color: #333;
+    padding: 0 0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    div.answer-box {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      padding: 0.75rem;
+    }
+  
+    textarea {
+      font-size: 14px;
+    }
+  }
+  
